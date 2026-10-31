@@ -1,8 +1,152 @@
+body {
+    background-color: white;
+    color: #222;
+    transition: 0.3s;
+}
+
 header {
     background-color: white;
+}
+
+.navbar {
+    background-color: white ;
+    transition: 0.3s;
 }
 
 .navbar-brand {
     font-size: 24px;
     font-weight: bold;
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+    color: #222;
+}
+
+.card {
+    background-color: #f2f2f2;
+    color: #222;
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+.dark-mode header,
+.dark-mode .navbar {
+    background-color: #333 ;
+}
+
+.dark-mode .navbar {
+    border-color: #555 ;
+}
+
+.dark-mode .card {
+    background-color: #333;
+    color: white;
+    border-color: #555;
+}
+
+.dark-mode .card h5,
+.dark-mode .card h6 {
+    color: white;
+}
+
+.dark-mode .nav-link,
+.dark-mode .navbar-brand {
+    color: white;
+}
+
+.dark-mode .best-sellers,
+.dark-mode .top-offers,
+.dark-mode .shop-section {
+    color: white;
+}
+
+.dark-mode .form-control {
+    background-color: #333;
+    color: white;
+    border-color: #555;
+}
+
+.dark-mode .form-control::placeholder {
+    color: #ccc;
+}
+
+.round-img {
+    width: 100%;
+    max-width: 180px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid #230000;
+}
+
+.shop-section {
+    background-color: #fffdf5;
+    padding: 40px;
+    margin-bottom: 20px;
+}
+
+.shop-section h2 {
+    color: #470000;
+}
+
+.shop-section p {
+    color: #555;
+    font-size: 18px;
+}
+
+.dark-mode .shop-section {
+    background-color: #333;
+}
+
+.dark-mode .shop-section h2,
+.dark-mode .shop-section p {
+    color: white;
+}
+
+.main-footer {
+    background-color: rgba(0, 0, 0, 0.74);
+    color: white;
+    margin-top: 30px;
+}
+
+.main-footer h5 {
+    color: white;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+.card-img-top {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+@media (max-width: 576px) {
+    .round-img {
+        max-width: 140px;
+    }
+
+    .shop-section {
+        padding: 20px;
+    }
+
+    .navbar-brand {
+        font-size: 20px;
+    }
 }
