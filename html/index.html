@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>MN Store</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -13,67 +12,80 @@
 
 <body>
     <header>
-        <nav class="navbar bg-white border-bottom">
-            <div class="container-fluid px-4">
-                <a class="navbar-brand d-flex align-items-center" href="../html/index.html">
-                    <img src="../image/logo.jpeg" width="40" height="40" class="me-2">
-                    Fashion Store
+        <nav class="navbar navbar-expand-lg bg-white border-bottom">
+            <div class="container-fluid px-3 px-lg-4">
+
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="../image/logo.jpeg" width="40" height="40" class="me-2" alt="MN Logo">
+                    <span data-en="Fashion Store" data-ar="متجر الأزياء">Fashion Store</span>
                 </a>
-                <form class="d-flex mx-4 flex-grow-1">
-                    <input class="form-control" type="search" placeholder="What are you looking for?">
 
-                    <button class="btn btn-secondary" type="submit">
-                        <i class="bi bi-search"></i>
-                    </button>
-                </form>
-                <div class="d-flex align-items-center">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                    <a href="#" class="nav-link mx-2">
-                        <i class="bi bi-geo-alt fs-5"></i>
-                    </a>
+                <div class="collapse navbar-collapse" id="mainNavbar">
 
-                    <a href="#" class="nav-link mx-2">
-                        <i class="bi bi-heart fs-5"></i>
-                    </a>
+                    <form class="d-flex mx-lg-4 my-3 my-lg-0 flex-grow-1">
+                        <input class="form-control" type="search" placeholder="What are you looking for?"
+                            data-placeholder-en="What are you looking for?" data-placeholder-ar="عن ماذا تبحث؟">
 
-                    <a href="#" class="nav-link mx-2 d-flex align-items-center">
-                        <i class="bi bi-bag fs-5 me-2"></i>
-                        Cart
-                    </a>
+                        <button class="btn btn-secondary" type="submit">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </form>
 
-                    <a href="#" class="btn btn-secondary ms-3">Login</a>
+                    <div class="d-flex align-items-center flex-wrap gap-2">
 
+                        <a href="https://www.google.com/maps/search/?api=1&query=Longnan%2C+Gansu%2C+China"
+                            class="nav-link" target="_blank">
+                            <i class="bi bi-geo-alt fs-5"></i>
+                        </a>
+
+                        <a href="wishlist.html" class="nav-link">
+                            <i class="bi bi-heart fs-5"></i>
+                        </a>
+
+                        <a href="cart.html" class="nav-link d-flex align-items-center">
+                            <i class="bi bi-bag fs-5 me-2"></i>
+                            <span data-en="Cart" data-ar="السلة">Cart</span>
+                            <span id="cartCount" class="badge bg-dark ms-2">0</span>
+                        </a>
+
+                        <button class="btn btn-outline-dark" id="langBtn">العربية</button>
+
+                        <button class="btn btn-outline-dark" id="themeBtn">
+                            <i class="bi bi-moon"></i>
+                        </button>
+
+                        <a href="login.html" class="btn btn-secondary" data-en="Login" data-ar="تسجيل الدخول">Login</a>
+
+                    </div>
                 </div>
-
             </div>
         </nav>
-        \
-        <nav class="navbar navbar-expand bg-white border-bottom">
 
+        <nav class="navbar bg-white border-bottom">
             <div class="container-fluid justify-content-center">
-
-                <ul class="navbar-nav gap-4">
-
+                <ul class="navbar-nav flex-row flex-wrap justify-content-center gap-3 gap-md-4">
                     <li class="nav-item">
-                        <a class="nav-link" href="../html/">Women</a>
+                        <a class="nav-link" href="women.html" data-en="Women" data-ar="نساء">Women</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../html/">Men</a>
+                        <a class="nav-link" href="men.html" data-en="Men" data-ar="رجال">Men</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../html/">Kids</a>
+                        <a class="nav-link" href="kids.html" data-en="Kids" data-ar="أطفال">Kids</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../html/">Lifestyle</a>
+                        <a class="nav-link" href="lifestyle.html" data-en="Lifestyle"
+                            data-ar="أسلوب الحياة">Lifestyle</a>
                     </li>
-
                 </ul>
-
             </div>
-
         </nav>
-
     </header>
+
     <main>
         <section class="container-fluid p-0">
             <div class="video">
@@ -82,149 +94,192 @@
                 </video>
             </div>
         </section>
-        <br>
 
         <section class="container-fluid p-4">
+            <div class="row justify-content-center g-4">
+                <div class="col-12 col-sm-6 col-md-3 text-center">
+                    <a href="kids.html">
+                        <img src="../image/kids.jpg" class="round-img" alt="Kids">
+                    </a>
+                    <h5 data-en="Kids" data-ar="أطفال">Kids</h5>
+                </div>
 
+                <div class="col-12 col-sm-6 col-md-3 text-center">
+                    <a href="women.html">
+                        <img src="../image/women.jpg" class="round-img" alt="Women">
+                    </a>
+                    <h5 data-en="Women" data-ar="نساء">Women</h5>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-3 text-center">
+                    <a href="men.html">
+                        <img src="../image/man.jpg" class="round-img" alt="Men">
+                    </a>
+                    <h5 data-en="Men" data-ar="رجال">Men</h5>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-3 text-center">
+                    <a href="lifestyle.html">
+                        <img src="../image/lifestyle.jpg" class="round-img" alt="Lifestyle">
+                    </a>
+                    <h5 data-en="Lifestyle" data-ar="أسلوب الحياة">Lifestyle</h5>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid p-4">
             <div class="best-sellers">
-
-                <h4 class="mb-4">Best Sellers</h4>
+                <h4 class="mb-4" data-en="Best Sellers" data-ar="الأكثر مبيعاً">Best Sellers</h4>
 
                 <div class="row g-3">
-
-                    <div class="col-md-3">
+                    <div class="col-12 col-sm-6 col-lg-3">
                         <div class="card">
-
-                            <img src="../image/m2.jpg" height="280" class="card-img-top" alt="Men's Shirt">
-
+                            <img src="../image/m2.jpg" class="card-img-top" alt="Men's Shirt">
                             <div class="card-body text-center">
-                                <h5 class="card-title">Men's Shirt</h5>
+                                <h5 class="card-title" data-en="Men's Shirt" data-ar="قميص رجالي">Men's Shirt</h5>
                                 <h5>$9.99</h5>
-                                <a href="#" class="btn btn-dark">Add to Cart</a>
+                                <button class="btn btn-dark add-to-cart" data-name="Men's Shirt" data-price="9.99"
+                                    data-image="../image/m2.jpg" data-en="Add to Cart" data-ar="أضف إلى السلة">Add to
+                                    Cart</button>
                             </div>
-
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <img src="../image/m4.jpg" height="280" class="card-img-top" alt="Men's Jacket">
 
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card">
+                            <img src="../image/m4.jpg" class="card-img-top" alt="Men's Jacket">
                             <div class="card-body text-center">
-                                <h5 class="card-title">Men's Jacket</h5>
-                               
+                                <h5 class="card-title" data-en="Men's Jacket" data-ar="سترة رجالية">Men's Jacket</h5>
                                 <h5>$19.99</h5>
-                                <a href="#" class="btn btn-dark">Add to Cart</a>
+                                <button class="btn btn-dark add-to-cart" data-name="Men's Jacket" data-price="19.99"
+                                    data-image="../image/m4.jpg" data-en="Add to Cart" data-ar="أضف إلى السلة">Add to
+                                    Cart</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <img src="../image/k3.jpg" height="280" class="card-img-top" alt="Kids' Outfit">
 
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card">
+                            <img src="../image/k3.jpg" class="card-img-top" alt="Kids' Outfit">
                             <div class="card-body text-center">
-                                <h5 class="card-title">Kids' Outfit</h5>
-                                
+                                <h5 class="card-title" data-en="Kids' Outfit" data-ar="ملابس أطفال">Kids' Outfit</h5>
                                 <h5>$19.99</h5>
-                                <a href="#" class="btn btn-dark">Add to Cart</a>
+                                <button class="btn btn-dark add-to-cart" data-name="Kids' Outfit" data-price="19.99"
+                                    data-image="../image/k3.jpg" data-en="Add to Cart" data-ar="أضف إلى السلة">Add to
+                                    Cart</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <img src="../image/c1.jpeg" height="280" class="card-img-top" alt="Women's Jacket">
 
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card">
+                            <img src="../image/c1.jpeg" class="card-img-top" alt="Women's Jacket">
                             <div class="card-body text-center">
-                                <h5 class="card-title">Women's Jacket</h5>
-                                
+                                <h5 class="card-title" data-en="Women's Jacket" data-ar="سترة نسائية">Women's Jacket
+                                </h5>
                                 <h5>$24.99</h5>
-                                <a href="#" class="btn btn-dark">Add to Cart</a>
+                                <button class="btn btn-dark add-to-cart" data-name="Women's Jacket" data-price="24.99"
+                                    data-image="../image/c1.jpeg" data-en="Add to Cart" data-ar="أضف إلى السلة">Add to
+                                    Cart</button>
                             </div>
                         </div>
                     </div>
-           
-                    
-
                 </div>
-
             </div>
-
         </section>
+
         <section class="container-fluid p-4">
-
             <div class="top-offers">
-
-                <h4 class="mb-4">TOP Offers</h4>
+                <h4 class="mb-4" data-en="TOP Offers" data-ar="أفضل العروض">TOP Offers</h4>
 
                 <div class="row g-3">
-
-                    <div class="col-md-3">
+                    <div class="col-12 col-sm-6 col-lg-3">
                         <div class="card">
-
-                            <img src="../image/a1.jpg" height="280" class="card-img-top" alt="Women's Cropped Blazer Jacket">
-
+                            <img src="../image/a1.jpg" class="card-img-top" alt="Women's Cropped Blazer Jacket">
                             <div class="card-body text-center">
-                                <h5 class="card-title">Women's Cropped Blazer Jacket</h5>
-                                
-                                <h6>$9.99       <del>$24.99</del></h6>
-                                <a href="#" class="btn btn-dark">Add to Cart</a>
+                                <h5 class="card-title" data-en="Women's Cropped Blazer Jacket"
+                                    data-ar="جاكيت نسائي قصير">Women's Cropped Blazer Jacket</h5>
+                                <h6>$9.99 <del>$24.99</del></h6>
+                                <button class="btn btn-dark add-to-cart" data-name="Women's Cropped Blazer Jacket"
+                                    data-price="9.99" data-image="../image/a1.jpg" data-en="Add to Cart"
+                                    data-ar="أضف إلى السلة">Add to Cart</button>
                             </div>
-
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <img src="../image/m8.jpg" height="280" class="card-img-top" alt="Men's Winter Sweater">
 
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card">
+                            <img src="../image/m8.jpg" class="card-img-top" alt="Men's Winter Sweater">
                             <div class="card-body text-center">
-                                <h5 class="card-title">Men's Winter Sweater</h5>
-                                
+                                <h5 class="card-title" data-en="Men's Winter Sweater" data-ar="كنزة شتوية رجالية">Men's
+                                    Winter Sweater</h5>
                                 <h5>$19.99 <del>$24.99</del></h5>
-                                <a href="#" class="btn btn-dark">Add to Cart</a>
+                                <button class="btn btn-dark add-to-cart" data-name="Men's Winter Sweater"
+                                    data-price="19.99" data-image="../image/m8.jpg" data-en="Add to Cart"
+                                    data-ar="أضف إلى السلة">Add to Cart</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <img src="../image/m5.jpg" height="280" class="card-img-top" alt="Casual cap">
 
-                            <div class="card-body text-center ">
-                                <h5 class="card-title">Casual cap</h5>
-                                
-                                 <h5>$4.99 <del>$12.99</del></h5>
-                                <a href="#" class="btn btn-dark">Add to Cart</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
+                    <div class="col-12 col-sm-6 col-lg-3">
                         <div class="card">
-                            <img src="../image/w1.jpg" height="280" class="card-img-top" alt="Women's sport Jacket">
-
+                            <img src="../image/m5.jpg" class="card-img-top" alt="Casual Cap">
                             <div class="card-body text-center">
-                                <h5 class="card-title">Women's sport Jacket</h5>
-                                
-                                 <h5>$14.99 <del>$24.99</del></h5>
-                                <a href="#" class="btn btn-dark">Add to Cart</a>
+                                <h5 class="card-title" data-en="Casual Cap" data-ar="قبعة كاجوال">Casual Cap</h5>
+                                <h5>$4.99 <del>$12.99</del></h5>
+                                <button class="btn btn-dark add-to-cart" data-name="Casual Cap" data-price="4.99"
+                                    data-image="../image/m5.jpg" data-en="Add to Cart" data-ar="أضف إلى السلة">Add to
+                                    Cart</button>
                             </div>
                         </div>
                     </div>
-           
-                    
 
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card">
+                            <img src="../image/w1.jpg" class="card-img-top" alt="Women's Sport Jacket">
+                            <div class="card-body text-center">
+                                <h5 class="card-title" data-en="Women's Sport Jacket" data-ar="جاكيت رياضي نسائي">
+                                    Women's Sport Jacket</h5>
+                                <h5>$14.99 <del>$24.99</del></h5>
+                                <button class="btn btn-dark add-to-cart" data-name="Women's Sport Jacket"
+                                    data-price="14.99" data-image="../image/w1.jpg" data-en="Add to Cart"
+                                    data-ar="أضف إلى السلة">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
             </div>
-
         </section>
 
+        <section class="container-fluid p-4 shop-section">
+            <div class="row align-items-center g-4">
+                <div class="col-12 col-md-6 text-center">
+                    <h2 data-en="Shop Smart, Shop in Style." data-ar="تسوق بذكاء، وتسوق بأناقة.">Shop Smart, Shop in
+                        Style.</h2>
+                    <p data-en="Coming Now!" data-ar="قريباً!">Coming Now!</p>
+                </div>
 
-
-
-
-
+                <div class="col-12 col-md-6">
+                    <iframe src="https://maps.google.com/maps?q=Longnan%2C%20Gansu%2C%20China&output=embed" width="100%"
+                        height="300" style="border:0;" allowfullscreen loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
     </main>
 
+    <footer class="main-footer text-center p-4">
+        <h5>MN Fashion Store</h5>
+        <div class="footer-links">
+            <a href="../html/contact.html" data-en="Contact Us" data-ar="للتواصل">Home</a>
+        </div>
+        <hr>
+        <p class="mb-0">
+            &copy; 2026 MN Fashion Store.
+            <span data-en="All Rights Reserved." data-ar="جميع الحقوق محفوظة.">All Rights Reserved.</span>
+        </p>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="../js/index.js"></script>
 </body>
 
 </html>

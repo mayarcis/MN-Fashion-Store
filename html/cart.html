@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - MN Store</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar bg-white border-bottom">
+            <div class="container-fluid px-4">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="../image/logo.jpeg" width="40" height="40" class="me-2">
+                    <span data-en="Fashion Store" data-ar="متجر الأزياء">Fashion Store</span>
+                </a>
+
+                <div class="d-flex align-items-center">
+                    <button class="btn btn-outline-dark mx-2" id="langBtn">العربية</button>
+                    <button class="btn btn-outline-dark mx-2" id="themeBtn">
+                        <i class="bi bi-moon"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container py-5">
+
+        <h2 class="mb-4" data-en="Shopping Cart" data-ar="سلة التسوق">
+            Shopping Cart
+        </h2>
+
+        <div id="cartItems"></div>
+
+        <div class="text-end mt-4">
+            <h4>
+                <span data-en="Total:" data-ar="المجموع:">Total:</span>
+                $<span id="totalPrice">0.00</span>
+            </h4>
+
+            <a href="index.html" class="btn btn-secondary mt-3"
+                data-en="Continue Shopping" data-ar="متابعة التسوق">
+                Continue Shopping
+            </a>
+
+            <button class="btn btn-dark mt-3" id="checkoutBtn"
+                data-en="Checkout" data-ar="إتمام الشراء">
+                Checkout
+            </button>
+        </div>
+
+    </main>
+
+    <footer class="main-footer text-center p-4">
+        <h5>MN Fashion Store</h5>
+        <hr>
+        <p class="mb-0">&copy; 2026 MN Fashion Store. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/cart.js"></script>
+
+</body>
+</html>
