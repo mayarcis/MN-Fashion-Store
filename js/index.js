@@ -76,7 +76,9 @@ document.querySelectorAll(".product-details").forEach(function(details) {
     let selectedColor = details.querySelector(".selected-color span");
 
     sizes.forEach(function(size) {
-        size.addEventListener("click", function() {
+        size.addEventListener("click", function(event) {
+            event.stopPropagation();
+
             sizes.forEach(function(item) {
                 item.classList.remove("active");
             });
@@ -90,7 +92,9 @@ document.querySelectorAll(".product-details").forEach(function(details) {
     });
 
     colors.forEach(function(color) {
-        color.addEventListener("click", function() {
+        color.addEventListener("click", function(event) {
+            event.stopPropagation();
+
             colors.forEach(function(item) {
                 item.classList.remove("selected");
             });
@@ -105,7 +109,10 @@ document.querySelectorAll(".product-details").forEach(function(details) {
 });
 
 document.querySelectorAll(".add-to-cart").forEach(function(button) {
-    button.addEventListener("click", function() {
+    button.addEventListener("click", function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+
         let details = this.closest(".product-details");
 
         let sizeElement = details ? details.querySelector(".selected-size span") : null;

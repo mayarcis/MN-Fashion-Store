@@ -164,6 +164,8 @@ header {
 
 .product-card {
     overflow: hidden;
+    height: auto;
+    align-self: flex-start;
 }
 
 .product-toggle {
@@ -176,8 +178,10 @@ header {
 }
 
 .product-image {
+    width: 100%;
     height: 280px;
-    object-fit: cover;
+    object-fit:fill;
+    background-color: white;
 }
 
 .product-price {
