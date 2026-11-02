@@ -82,63 +82,81 @@
         </section>
 
         <section class="container-fluid p-4">
-            <div class="top-offers">
-                <h4 class="mb-4" data-en="TOP Offers" data-ar="أفضل العروض">TOP Offers</h4>
+            <div class="best-sellers">
+                <h4 class="mb-4" data-en="Best Sellers" data-ar="أفضل المبيعات">Best Sellers</h4>
                 <div class="row g-4 align-items-start">
 
+
                     <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="card product-card">
+                        <div class="card product-card h-100">
                             <button class="product-toggle" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#offer1">
-                                <img src="../image/a1.jpg" class="card-img-top product-image"
-                                    alt="Women's Blazer Jacket">
+                                data-bs-target="#offer1" aria-expanded="false">
+                                <img src="../image/m1.jpg" class="card-img-top product-image" alt="Men's Shirt">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title" data-en="Women's Blazer Jacket"
-                                        data-ar="جاكيت نسائي قصير">Women's  Blazer Jacket</h5>
-                                    <span class="product-price">$9.99 <del>$24.99</del></span>
-                                    <p class="details-text mt-2">View Details <i class="bi bi-chevron-down"></i></p>
+                                    <h5 class="card-title" data-en="Men's Shirt" data-ar="قميص رجالي">Men's Shirt</h5>
+                                    <span class="product-price">$9.99</span>
+                                    <p class="details-text mt-2" data-en="View Details" data-ar="عرض التفاصيل">
+                                        View Details <i class="bi bi-chevron-down"></i>
+                                    </p>
                                 </div>
                             </button>
-                            <div class="collapse" id="offer1">
+
+                            <div class="collapse product-collapse" id="offer1">
                                 <div class="product-details">
-                                    <h6>Product Description</h6>
-                                    <p data-en="Modern cropped blazer jacket." data-ar="جاكيت قصير بتصميم عصري.">Modern
-                                        cropped blazer jacket.</p>
-                                    <h6>Available Sizes</h6>
+                                    <h6 data-en="Product Description" data-ar="وصف المنتج">Product Description</h6>
+                                    <p data-en="Classic men's shirt for casual and formal occasions."
+                                        data-ar="قميص رجالي كلاسيكي للمناسبات اليومية والرسمية.">
+                                        Classic men's shirt for casual and formal occasions.
+                                    </p>
+
+                                    <h6 data-en="Available Sizes" data-ar="الأحجام المتوفرة">Available Sizes</h6>
                                     <div class="mb-3 size-options">
                                         <button type="button" class="size-option">S</button>
                                         <button type="button" class="size-option">M</button>
                                         <button type="button" class="size-option">L</button>
                                         <button type="button" class="size-option">XL</button>
                                     </div>
-                                    <h6>Available Colors</h6>
+
+                                    <h6 data-en="Available Colors" data-ar="الألوان المتوفرة">Available Colors</h6>
                                     <div class="color-options">
                                         <button type="button" class="color-circle black" data-color="Black"></button>
                                         <button type="button" class="color-circle beige" data-color="Beige"></button>
                                         <button type="button" class="color-circle brown" data-color="Brown"></button>
                                     </div>
-                                    <p class="selected-color mt-3">Selected Color: <span>None</span></p>
-                                    <p class="selected-size">Selected Size: <span>None</span></p>
+
+                                    <p class="selected-color mt-3">
+                                        <span data-en="Selected Color:" data-ar="اللون المختار:">Selected Color:</span>
+                                        <span>None</span>
+                                    </p>
+
+                                    <p class="selected-size">
+                                        <span data-en="Selected Size:" data-ar="المقاس المختار:">Selected Size:</span>
+                                        <span>None</span>
+                                    </p>
+
                                     <p class="mt-3 mb-0"><strong>Price: $9.99</strong></p>
-                                    <button type="button" class="btn btn-dark w-100 mt-3 add-to-cart" data-id="blazer1"
-                                        data-name="Women's  Blazer Jacket" data-price="9.99"
-                                        data-image="../image/a1.jpg" data-en="Add to Cart" data-ar="أضف إلى السلة">Add
-                                        to Cart</button>
+
+                                    <button type="button" class="btn btn-dark w-100 mt-3 add-to-cart"
+                                        data-id="mens-shirt1" data-name="Men's Shirt" data-price="9.99"
+                                        data-image="../image/m1.jpg" data-en="Add to Cart" data-ar="أضف إلى السلة">
+                                        Add to Cart
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
 
+
                     <div class="col-12 col-sm-6 col-lg-3">
                         <div class="card product-card">
                             <button class="product-toggle" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#offer2">
-                                <img src="../image/m8.jpg" class="card-img-top product-image"
+                                <img src="../image/m7.jpg" class="card-img-top product-image"
                                     alt="Men's Winter Sweater">
                                 <div class="card-body text-center">
                                     <h5 class="card-title" data-en="Men's Winter Sweater" data-ar="كنزة شتوية رجالية">
                                         Men's Winter Sweater</h5>
-                                    <span class="product-price">$19.99 <del>$24.99</del></span>
+                                    <span class="product-price">$19.99</span>
                                     <p class="details-text mt-2">View Details <i class="bi bi-chevron-down"></i></p>
                                 </div>
                             </button>
@@ -170,41 +188,64 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="col-12 col-sm-6 col-lg-3">
                         <div class="card product-card">
                             <button class="product-toggle" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#offer3">
-                                <img src="../image/m5.jpg" class="card-img-top product-image" alt="Casual Cap">
+                                data-bs-target="#offer3" aria-expanded="false">
+                                <img src="../image/m6.jpg" class="card-img-top product-image" alt="Casual Cap">
                                 <div class="card-body text-center">
                                     <h5 class="card-title" data-en="Casual Cap" data-ar="قبعة كاجوال">Casual Cap</h5>
-                                    <span class="product-price">$4.99 <del>$12.99</del></span>
-                                    <p class="details-text mt-2">View Details <i class="bi bi-chevron-down"></i></p>
+                                    <span class="product-price">$7.99</span>
+                                    <p class="details-text mt-2">
+                                        View Details <i class="bi bi-chevron-down"></i>
+                                    </p>
                                 </div>
                             </button>
-                            <div class="collapse" id="offer3">
+
+                            <div class="collapse product-collapse" id="offer3">
                                 <div class="product-details">
-                                    <h6>Product Description</h6>
-                                    <p data-en="Casual cap for everyday style." data-ar="قبعة كاجوال لإطلالة يومية.">
-                                        Casual cap for everyday style.</p>
-                                    <h6>Available Sizes</h6>
+                                    <h6 data-en="Product Description" data-ar="وصف المنتج">Product Description</h6>
+                                    <p data-en="Comfortable casual cap, perfect for everyday outfits."
+                                        data-ar="قبعة كاجوال مريحة ومناسبة للإطلالات اليومية.">
+                                        Comfortable casual cap, perfect for everyday outfits.
+                                    </p>
+
+                                    <h6 data-en="Available Sizes" data-ar="المقاسات المتوفرة">Available Sizes</h6>
                                     <div class="mb-3 size-options">
                                         <button type="button" class="size-option">S</button>
                                         <button type="button" class="size-option">M</button>
                                         <button type="button" class="size-option">L</button>
+                                        <button type="button" class="size-option">XL</button>
                                     </div>
-                                    <h6>Available Colors</h6>
+
+                                    <h6 data-en="Available Colors" data-ar="الألوان المتوفرة">Available Colors</h6>
                                     <div class="color-options">
                                         <button type="button" class="color-circle black" data-color="Black"></button>
                                         <button type="button" class="color-circle beige" data-color="Beige"></button>
                                         <button type="button" class="color-circle brown" data-color="Brown"></button>
                                     </div>
-                                    <p class="selected-color mt-3">Selected Color: <span>None</span></p>
-                                    <p class="selected-size">Selected Size: <span>None</span></p>
-                                    <p class="mt-3 mb-0"><strong>Price: $4.99</strong></p>
+
+                                    <p class="selected-color mt-3">
+                                        <span data-en="Selected Color:" data-ar="اللون المختار:">Selected Color:</span>
+                                        <span>None</span>
+                                    </p>
+
+                                    <p class="selected-size">
+                                        <span data-en="Selected Size:" data-ar="المقاس المختار:">Selected Size:</span>
+                                        <span>None</span>
+                                    </p>
+
+                                    <p class="mt-3 mb-0">
+                                        <strong>
+                                            <span data-en="Price:" data-ar="السعر:">Price:</span> $7.99
+                                        </strong>
+                                    </p>
+
                                     <button type="button" class="btn btn-dark w-100 mt-3 add-to-cart" data-id="cap1"
-                                        data-name="Casual Cap" data-price="4.99" data-image="../image/m5.jpg"
-                                        data-en="Add to Cart" data-ar="أضف إلى السلة">Add to Cart</button>
+                                        data-name="Casual Cap" data-price="7.99" data-image="../image/m6.jpg"
+                                        data-en="Add to Cart" data-ar="أضف إلى السلة">
+                                        Add to Cart
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -214,12 +255,12 @@
                         <div class="card product-card">
                             <button class="product-toggle" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#offer4">
-                                <img src="../image/w1.jpg" class="card-img-top product-image"
+                                <img src="../image/w4.webp" width="100%" height="200" class="card-img-top product-image"
                                     alt="Women's Sport Jacket">
                                 <div class="card-body text-center">
                                     <h5 class="card-title" data-en="Women's Sport Jacket" data-ar="جاكيت رياضي نسائي">
                                         Women's Sport Jacket</h5>
-                                    <span class="product-price">$14.99 <del>$24.99</del></span>
+                                    <span class="product-price">$14.99</span>
                                     <p class="details-text mt-2">View Details <i class="bi bi-chevron-down"></i></p>
                                 </div>
                             </button>
@@ -246,183 +287,7 @@
                                     <p class="mt-3 mb-0"><strong>Price: $14.99</strong></p>
                                     <button type="button" class="btn btn-dark w-100 mt-3 add-to-cart"
                                         data-id="sportjacket1" data-name="Women's Sport Jacket" data-price="14.99"
-                                        data-image="../image/w1.jpg" data-en="Add to Cart" data-ar="أضف إلى السلة">Add
-                                        to Cart</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section class="container-fluid p-4">
-            <div class="top-offers">
-                <h4 class="mb-4" data-en="TOP Offers" data-ar="أفضل العروض">TOP Offers</h4>
-                <div class="row g-4 align-items-start">
-
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="card product-card">
-                            <button class="product-toggle" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#offer1">
-                                <img src="../image/a1.jpg" class="card-img-top product-image"
-                                    alt="Women's Cropped Blazer Jacket">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title" data-en="Women's Cropped Blazer Jacket"
-                                        data-ar="جاكيت نسائي قصير">Women's Cropped Blazer Jacket</h5>
-                                    <span class="product-price">$9.99 <del>$24.99</del></span>
-                                    <p class="details-text mt-2">View Details <i class="bi bi-chevron-down"></i></p>
-                                </div>
-                            </button>
-                            <div class="collapse" id="offer1">
-                                <div class="product-details">
-                                    <h6>Product Description</h6>
-                                    <p data-en="Modern cropped blazer jacket." data-ar="جاكيت قصير بتصميم عصري.">Modern
-                                        cropped blazer jacket.</p>
-                                    <h6>Available Sizes</h6>
-                                    <div class="mb-3 size-options">
-                                        <button type="button" class="size-option">S</button>
-                                        <button type="button" class="size-option">M</button>
-                                        <button type="button" class="size-option">L</button>
-                                        <button type="button" class="size-option">XL</button>
-                                    </div>
-                                    <h6>Available Colors</h6>
-                                    <div class="color-options">
-                                        <button type="button" class="color-circle black" data-color="Black"></button>
-                                        <button type="button" class="color-circle beige" data-color="Beige"></button>
-                                        <button type="button" class="color-circle brown" data-color="Brown"></button>
-                                    </div>
-                                    <p class="selected-color mt-3">Selected Color: <span>None</span></p>
-                                    <p class="selected-size">Selected Size: <span>None</span></p>
-                                    <p class="mt-3 mb-0"><strong>Price: $9.99</strong></p>
-                                    <button type="button" class="btn btn-dark w-100 mt-3 add-to-cart" data-id="blazer1"
-                                        data-name="Women's Cropped Blazer Jacket" data-price="9.99"
-                                        data-image="../image/a1.jpg" data-en="Add to Cart" data-ar="أضف إلى السلة">Add
-                                        to Cart</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="card product-card">
-                            <button class="product-toggle" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#offer2">
-                                <img src="../image/m8.jpg" class="card-img-top product-image"
-                                    alt="Men's Winter Sweater">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title" data-en="Men's Winter Sweater" data-ar="كنزة شتوية رجالية">
-                                        Men's Winter Sweater</h5>
-                                    <span class="product-price">$19.99 <del>$24.99</del></span>
-                                    <p class="details-text mt-2">View Details <i class="bi bi-chevron-down"></i></p>
-                                </div>
-                            </button>
-                            <div class="collapse" id="offer2">
-                                <div class="product-details">
-                                    <h6>Product Description</h6>
-                                    <p data-en="Warm sweater for winter days." data-ar="كنزة دافئة لأيام الشتاء.">Warm
-                                        sweater for winter days.</p>
-                                    <h6>Available Sizes</h6>
-                                    <div class="mb-3 size-options">
-                                        <button type="button" class="size-option">S</button>
-                                        <button type="button" class="size-option">M</button>
-                                        <button type="button" class="size-option">L</button>
-                                        <button type="button" class="size-option">XL</button>
-                                    </div>
-                                    <h6>Available Colors</h6>
-                                    <div class="color-options">
-                                        <button type="button" class="color-circle black" data-color="Black"></button>
-                                        <button type="button" class="color-circle beige" data-color="Beige"></button>
-                                        <button type="button" class="color-circle brown" data-color="Brown"></button>
-                                    </div>
-                                    <p class="selected-color mt-3">Selected Color: <span>None</span></p>
-                                    <p class="selected-size">Selected Size: <span>None</span></p>
-                                    <p class="mt-3 mb-0"><strong>Price: $19.99</strong></p>
-                                    <button type="button" class="btn btn-dark w-100 mt-3 add-to-cart" data-id="sweater1"
-                                        data-name="Men's Winter Sweater" data-price="19.99" data-image="../image/m8.jpg"
-                                        data-en="Add to Cart" data-ar="أضف إلى السلة">Add to Cart</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="card product-card">
-                            <button class="product-toggle" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#offer3">
-                                <img src="../image/m5.jpg" class="card-img-top product-image" alt="Casual Cap">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title" data-en="Casual Cap" data-ar="قبعة كاجوال">Casual Cap</h5>
-                                    <span class="product-price">$4.99 <del>$12.99</del></span>
-                                    <p class="details-text mt-2">View Details <i class="bi bi-chevron-down"></i></p>
-                                </div>
-                            </button>
-                            <div class="collapse" id="offer3">
-                                <div class="product-details">
-                                    <h6>Product Description</h6>
-                                    <p data-en="Casual cap for everyday style." data-ar="قبعة كاجوال لإطلالة يومية.">
-                                        Casual cap for everyday style.</p>
-                                    <h6>Available Sizes</h6>
-                                    <div class="mb-3 size-options">
-                                        <button type="button" class="size-option">S</button>
-                                        <button type="button" class="size-option">M</button>
-                                        <button type="button" class="size-option">L</button>
-                                    </div>
-                                    <h6>Available Colors</h6>
-                                    <div class="color-options">
-                                        <button type="button" class="color-circle black" data-color="Black"></button>
-                                        <button type="button" class="color-circle beige" data-color="Beige"></button>
-                                        <button type="button" class="color-circle brown" data-color="Brown"></button>
-                                    </div>
-                                    <p class="selected-color mt-3">Selected Color: <span>None</span></p>
-                                    <p class="selected-size">Selected Size: <span>None</span></p>
-                                    <p class="mt-3 mb-0"><strong>Price: $4.99</strong></p>
-                                    <button type="button" class="btn btn-dark w-100 mt-3 add-to-cart" data-id="cap1"
-                                        data-name="Casual Cap" data-price="4.99" data-image="../image/m5.jpg"
-                                        data-en="Add to Cart" data-ar="أضف إلى السلة">Add to Cart</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="card product-card">
-                            <button class="product-toggle" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#offer4">
-                                <img src="../image/w1.jpg" class="card-img-top product-image"
-                                    alt="Women's Sport Jacket">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title" data-en="Women's Sport Jacket" data-ar="جاكيت رياضي نسائي">
-                                        Women's Sport Jacket</h5>
-                                    <span class="product-price">$14.99 <del>$24.99</del></span>
-                                    <p class="details-text mt-2">View Details <i class="bi bi-chevron-down"></i></p>
-                                </div>
-                            </button>
-                            <div class="collapse" id="offer4">
-                                <div class="product-details">
-                                    <h6>Product Description</h6>
-                                    <p data-en="Comfortable sport jacket for women." data-ar="جاكيت رياضي مريح للنساء.">
-                                        Comfortable sport jacket for women.</p>
-                                    <h6>Available Sizes</h6>
-                                    <div class="mb-3 size-options">
-                                        <button type="button" class="size-option">S</button>
-                                        <button type="button" class="size-option">M</button>
-                                        <button type="button" class="size-option">L</button>
-                                        <button type="button" class="size-option">XL</button>
-                                    </div>
-                                    <h6>Available Colors</h6>
-                                    <div class="color-options">
-                                        <button type="button" class="color-circle black" data-color="Black"></button>
-                                        <button type="button" class="color-circle pink" data-color="Pink"></button>
-                                        <button type="button" class="color-circle beige" data-color="Beige"></button>
-                                    </div>
-                                    <p class="selected-color mt-3">Selected Color: <span>None</span></p>
-                                    <p class="selected-size">Selected Size: <span>None</span></p>
-                                    <p class="mt-3 mb-0"><strong>Price: $14.99</strong></p>
-                                    <button type="button" class="btn btn-dark w-100 mt-3 add-to-cart"
-                                        data-id="sportjacket1" data-name="Women's Sport Jacket" data-price="14.99"
-                                        data-image="../image/w1.jpg" data-en="Add to Cart" data-ar="أضف إلى السلة">Add
+                                        data-image="../image/w4.webp" data-en="Add to Cart" data-ar="أضف إلى السلة">Add
                                         to Cart</button>
                                 </div>
                             </div>
