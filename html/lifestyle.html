@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MN Store - Men</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/lifestyle.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white border-bottom">
+            <div class="container-fluid px-3 px-lg-4">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="../image/logo.jpeg" width="40" height="40" class="me-2" alt="MN Logo">
+                    <span data-en="Fashion Store" data-ar="متجر الأزياء">Fashion Store</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <form class="d-flex mx-lg-4 my-3 my-lg-0 flex-grow-1">
+                        <input class="form-control" type="search" placeholder="What are you looking for?">
+                        <button class="btn btn-secondary" type="submit">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </form>
+                    <div class="d-flex align-items-center flex-wrap gap-2">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Longnan%2C+Gansu%2C+China"
+                            class="nav-link" target="_blank">
+                            <i class="bi bi-geo-alt fs-5"></i>
+                        </a>
+                        <a href="wishlist.html" class="nav-link">
+                            <i class="bi bi-heart fs-5"></i>
+                        </a>
+                        <a href="cart.html" class="nav-link d-flex align-items-center">
+                            <i class="bi bi-bag fs-5 me-2"></i>
+                            <span>Cart</span>
+                            <span id="cartCount" class="badge bg-dark ms-2">0</span>
+                        </a>
+                        <button class="btn btn-outline-dark" id="langBtn">العربية</button>
+                        <button class="btn btn-outline-dark" id="themeBtn">
+                            <i class="bi bi-moon"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="navbar bg-white border-bottom">
+            <div class="container-fluid justify-content-center">
+                <ul class="navbar-nav flex-row flex-wrap justify-content-center gap-3 gap-md-4">
+                    <li class="nav-item"><a class="nav-link active" href="women.html">Women</a></li>
+                    <li class="nav-item"><a class="nav-link" href="men.html">Men</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kids.html">Kids</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lifestyle.html">Lifestyle</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="lifestyle-section py-5">
+        <div class="container">
+
+            <div class="text-center mb-5">
+                <h1 data-en="Home & Lifestyle Collection" data-ar="مجموعة المنزل والديكور">
+                    Home & Lifestyle Collection
+                </h1>
+
+                <p data-en="Discover beautiful home decor, furniture and lifestyle essentials"
+                    data-ar="اكتشف أجمل ديكورات المنزل والأثاث والإكسسوارات المنزلية">
+                    Discover beautiful home decor, furniture and lifestyle essentials
+                </p>
+            </div>
+
+            <!-- Home Decor -->
+            <section class="category-section mb-5">
+                <h2 class="category-title">Home Decor</h2>
+                <div class="products-flex">
+
+                    <div class="product-item">
+                        <div class="card product-card">
+                            <button class="product-toggle" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#home1">
+                                <img src="../image/h1.jpg" class="card-img-top product-image" alt="Decorative Vase">
+                                <div class="card-body text-start">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="card-title mb-1">Decorative Vase</h5>
+                                        <span class="product-price">12 JD</span>
+                                    </div>
+                                    <span class="details-text">View Details <i class="bi bi-chevron-down"></i></span>
+                                </div>
+                            </button>
+                            <div class="collapse" id="home1">
+                                <div class="product-details">
+                                    <h6>Product Description</h6>
+                                    <p>Elegant decorative vase for living rooms and tables.</p>
+                                    <h6>Available Colors</h6>
+                                    <div class="color-options">
+                                        <button type="button" class="color-circle white" data-color="White"></button>
+                                        <button type="button" class="color-circle beige" data-color="Beige"></button>
+                                        <button type="button" class="color-circle brown" data-color="Brown"></button>
+                                    </div>
+                                    <p class="selected-color mt-3">Selected Color: <span>None</span></p>
+                                    <p class="mt-3 mb-0"><strong>Price: 12 JD</strong></p>
+                                    <button type="button" class="btn btn-dark w-100 mt-3 add-to-cart" data-id="home1"
+                                        data-name="Decorative Vase" data-price="12" data-image="../image/h1.jpg">
+                                        <i class="bi bi-cart-plus"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="card product-card">
+                            <button class="product-toggle" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#home2">
+                                <img src="../image/h2.jpg" class="card-img-top product-image" alt="Wall Art">
+                                <div class="card-body text-start">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="card-title mb-1">Wall Art</h5>
+                                        <span class="product-price">18 JD</span>
+                                    </div>
+                                    <span class="details-text">View Details <i class="bi bi-chevron-down"></i></span>
+                                </div>
+                            </button>
+                            <div class="collapse" id="home2">
+                                <div class="product-details">
+                                    <h6>Product Description</h6>
+                                    <p>Modern wall art to add beauty to your home.</p>
+                                    <h6>Available Colors</h6>
+                                    <div class="color-options">
+                                        <button type="button" class="color-circle black" data-color="Black"></button>
+                                        <button type="button" class="color-circle beige" data-color="Beige"></button>
+                                    </div>
+                                    <p class="selected-color mt-3">Selected Color: <span>None</span></p>
+                                    <p class="mt-3 mb-0"><strong>Price: 18 JD</strong></p>
+                                    <button type="button" class="btn btn-dark w-100 mt-3 add-to-cart" data-id="home2"
+                                        data-name="Wall Art" data-price="18" data-image="../image/h2.jpg">
+                                        <i class="bi bi-cart-plus"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="card product-card">
+                            <button class="product-toggle" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#home3">
+                                <img src="../image/h3.jpg" class="card-img-top product-image" alt="Decorative Mirror">
+                                <div class="card-body text-start">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="card-title mb-1">Decorative Mirror</h5>
+                                        <span class="product-price">25 JD</span>
+                                    </div>
+                                    <span class="details-text">View Details <i class="bi bi-chevron-down"></i></span>
+                                </div>
+                            </button>
+                            <div class="collapse" id="home3">
+                                <div class="product-details">
+                                    <h6>Product Description</h6>
+                                    <p>Stylish decorative mirror for a modern home.</p>
+                                    <h6>Available Colors</h6>
+                                    <div class="color-options">
+                                        <button type="button" class="color-circle gold" data-color="Gold"></button>
+                                        <button type="button" class="color-circle silver" data-color="Silver"></button>
+                                    </div>
+                                    <p class="selected-color mt-3">Selected Color: <span>None</span></p>
+                                    <p class="mt-3 mb-0"><strong>Price: 25 JD</strong></p>
+                                    <button type="button" class="btn btn-dark w-100 mt-3 add-to-cart" data-id="home3"
+                                        data-name="Decorative Mirror" data-price="25" data-image="../image/h3.jpg">
+                                        <i class="bi bi-cart-plus"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- Bedroom -->
+            <section class="category-section mb-5">
+                <h2 class="category-title">Bedroom</h2>
+                <div class="products-flex">
+
+                    <div class="product-item">
+                        <div class="card product-card">
+                            <button class="product-toggle" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#bed1">
+                                <img src="../image/h4.jpg" class="card-img-top product-image" alt="Bed Sheet Set">
+                                <div class="card-body text-start">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="card-title mb-1">Bed Sheet Set</h5>
+                                        <span class="product-price">30 JD</span>
+                                    </div>
+                                    <span class="details-text">View Details <i class="bi bi-chevron-down"></i></span>
+                                </div>
+                            </button>
+                            <div class="collapse" id="bed1">
+                                <div class="product-details">
+                                    <h6>Product Description</h6>
+                                    <p>Soft and comfortable bed sheet set for everyday use.</p>
+                                    <h6>Available Sizes</h6>
+                                    <div class="mb-3 size-options">
+                                        <button type="button" class="size-option">Single</button>
+                                        <button type="button" class="size-option">Double</button>
+                                        <button type="button" class="size-option">King</button>
+                                    </div>
+                                    <h6>Available Colors</h6>
+                                    <div class="color-options">
+                                        <button type="button" class="color-circle white" data-color="White"></button>
+                                        <button type="button" class="color-circle beige" data-color="Beige"></button>
+                                        <button type="button" class="color-circle gray" data-color="Gray"></button>
+                                    </div>
+                                    <p class="selected-color mt-3">Selected Color: <span>None</span></p>
+                                    <p class="selected-size">Selected Size: <span>None</span></p>
+                                    <p class="mt-3 mb-0"><strong>Price: 30 JD</strong></p>
+                                    <button type="button" class="btn btn-dark w-100 mt-3 add-to-cart" data-id="bed1"
+                                        data-name="Bed Sheet Set" data-price="30" data-image="../image/h4.jpg">
+                                        <i class="bi bi-cart-plus"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="card product-card">
+                            <button class="product-toggle" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#bed2">
+                                <img src="../image/h5.jpg" class="card-img-top product-image" alt="Decorative Pillows">
+                                <div class="card-body text-start">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="card-title mb-1">Decorative Pillows</h5>
+                                        <span class="product-price">12 JD</span>
+                                    </div>
+                                    <span class="details-text">View Details <i class="bi bi-chevron-down"></i></span>
+                                </div>
+                            </button>
+                            <div class="collapse" id="bed2">
+                                <div class="product-details">
+                                    <h6>Product Description</h6>
+                                    <p>Beautiful soft pillows for bedroom decoration.</p>
+                                    <h6>Available Colors</h6>
+                                    <div class="color-options">
+                                        <button type="button" class="color-circle beige" data-color="Beige"></button>
+                                        <button type="button" class="color-circle pink" data-color="Pink"></button>
+                                        <button type="button" class="color-circle gray" data-color="Gray"></button>
+                                    </div>
+                                    <p class="selected-color mt-3">Selected Color: <span>None</span></p>
+                                    <p class="mt-3 mb-0"><strong>Price: 12 JD</strong></p>
+                                    <button type="button" class="btn btn-dark w-100 mt-3 add-to-cart" data-id="bed2"
+                                        data-name="Decorative Pillows" data-price="12" data-image="../image/h5.jpg">
+                                        <i class="bi bi-cart-plus"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="card product-card">
+                            <button class="product-toggle" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#bed3">
+                                <img src="../image/h6.jpg" class="card-img-top product-image" alt="Comforter Set">
+                                <div class="card-body text-start">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="card-title mb-1">Comforter Set</h5>
+                                        <span class="product-price">45 JD</span>
+                                    </div>
+                                    <span class="details-text">View Details <i class="bi bi-chevron-down"></i></span>
+                                </div>
+                            </button>
+                            <div class="collapse" id="bed3">
+                                <div class="product-details">
+                                    <h6>Product Description</h6>
+                                    <p>Comfortable and elegant comforter set for your bedroom.</p>
+                                    <h6>Available Sizes</h6>
+                                    <div class="mb-3 size-options">
+                                        <button type="button" class="size-option">Single</button>
+                                        <button type="button" class="size-option">Double</button>
+                                        <button type="button" class="size-option">King</button>
+                                    </div>
+                                    <h6>Available Colors</h6>
+                                    <div class="color-options">
+                                        <button type="button" class="color-circle white" data-color="White"></button>
+                                        <button type="button" class="color-circle brown" data-color="Brown"></button>
+                                    </div>
+                                    <p class="selected-color mt-3">Selected Color: <span>None</span></p>
+                                    <p class="selected-size">Selected Size: <span>None</span></p>
+                                    <p class="mt-3 mb-0"><strong>Price: 45 JD</strong></p>
+                                    <button type="button" class="btn btn-dark w-100 mt-3 add-to-cart" data-id="bed3"
+                                        data-name="Comforter Set" data-price="45" data-image="../image/h6.jpg">
+                                        <i class="bi bi-cart-plus"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- Lighting -->
+            <section class="category-section mb-5">
+                <h2 class="category-title">Lighting</h2>
+                <div class="products-flex">
+
+                    <div class="product-item">
+                        <div class="card product-card">
+                            <button class="product-toggle" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#light1">
+                                <img src="../image/h7.jpg" class="card-img-top product-image" alt="Table Lamp">
+                                <div class="card-body text-start">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="card-title mb-1">Table Lamp</h5>
+                                        <span class="product-price">18 JD</span>
+                                    </div>
+                                    <span class="details-text">View Details <i class="bi bi-chevron-down"></i></span>
+                                </div>
+                            </button>
+                            <div class="collapse" id="light1">
+                                <div class="product-details">
+                                    <h6>Product Description</h6>
+                                    <p>Modern table lamp for bedrooms and living rooms.</p>
+                                    <h6>Available Colors</h6>
+                                    <div class="color-options">
+                                        <button type="button" class="color-circle white" data-color="White"></button>
+                                        <button type="button" class="color-circle black" data-color="Black"></button>
+                                        <button type="button" class="color-circle gold" data-color="Gold"></button>
+                                    </div>
+                                    <p class="selected-color mt-3">Selected Color: <span>None</span></p>
+                                    <p class="mt-3 mb-0"><strong>Price: 18 JD</strong></p>
+                                    <button type="button" class="btn btn-dark w-100 mt-3 add-to-cart" data-id="light1"
+                                        data-name="Table Lamp" data-price="18" data-image="../image/h7.jpg">
+                                        <i class="bi bi-cart-plus"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="card product-card">
+                            <button class="product-toggle" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#light2">
+                                <img src="../image/h8.jpg" class="card-img-top product-image" alt="Ceiling Light">
+                                <div class="card-body text-start">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="card-title mb-1">Ceiling Light</h5>
+                                        <span class="product-price">35 JD</span>
+                                    </div>
+                                    <span class="details-text">View Details <i class="bi bi-chevron-down"></i></span>
+                                </div>
+                            </button>
+                            <div class="collapse" id="light2">
+                                <div class="product-details">
+                                    <h6>Product Description</h6>
+                                    <p>Elegant ceiling light with a modern design.</p>
+                                    <h6>Available Colors</h6>
+                                    <div class="color-options">
+                                        <button type="button" class="color-circle gold" data-color="Gold"></button>
+                                        <button type="button" class="color-circle black" data-color="Black"></button>
+                                    </div>
+                                    <p class="selected-color mt-3">Selected Color: <span>None</span></p>
+                                    <p class="mt-3 mb-0"><strong>Price: 35 JD</strong></p>
+                                    <button type="button" class="btn btn-dark w-100 mt-3 add-to-cart" data-id="light2"
+                                        data-name="Ceiling Light" data-price="35" data-image="../image/h8.jpg">
+                                        <i class="bi bi-cart-plus"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="card product-card">
+                            <button class="product-toggle" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#light3">
+                                <img src="../image/h9.jpg" class="card-img-top product-image" alt="LED Floor Lamp">
+                                <div class="card-body text-start">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="card-title mb-1">LED Floor Lamp</h5>
+                                        <span class="product-price">28 JD</span>
+                                    </div>
+                                    <span class="details-text">View Details <i class="bi bi-chevron-down"></i></span>
+                                </div>
+                            </button>
+                            <div class="collapse" id="light3">
+                                <div class="product-details">
+                                    <h6>Product Description</h6>
+                                    <p>Stylish floor lamp that creates a warm atmosphere.</p>
+                                    <h6>Available Colors</h6>
+                                    <div class="color-options">
+                                        <button type="button" class="color-circle black" data-color="Black"></button>
+                                        <button type="button" class="color-circle white" data-color="White"></button>
+                                    </div>
+                                    <p class="selected-color mt-3">Selected Color: <span>None</span></p>
+                                    <p class="mt-3 mb-0"><strong>Price: 28 JD</strong></p>
+                                    <button type="button" class="btn btn-dark w-100 mt-3 add-to-cart" data-id="light3"
+                                        data-name="LED Floor Lamp" data-price="28" data-image="../image/h9.jpg">
+                                        <i class="bi bi-cart-plus"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- Furniture -->
+            <section class="category-section mb-5">
+                <h2 class="category-title">Furniture</h2>
+                <div class="products-flex">
+
+                    <div class="product-item">
+                        <div class="card product-card">
+                            <button class="product-toggle" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#furniture1">
+                                <img src="../image/h10.jpg" class="card-img-top product-image" alt="Modern Chair">
+                                <div class="card-body text-start">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="card-title mb-1">Modern Chair</h5>
+                                        <span class="product-price">65 JD</span>
+                                    </div>
+                                    <span class="details-text">View Details <i class="bi bi-chevron-down"></i></span>
+                                </div>
+                            </button>
+                            <div class="collapse" id="furniture1">
+                                <div class="product-details">
+                                    <h6>Product Description</h6>
+                                    <p>Comfortable modern chair for your home.</p>
+                                    <h6>Available Colors</h6>
+                                    <div class="color-options">
+                                        <button type="button" class="color-circle beige" data-color="Beige"></button>
+                                        <button type="button" class="color-circle gray" data-color="Gray"></button>
+                                        <button type="button" class="color-circle black" data-color="Black"></button>
+                                    </div>
+                                    <p class="selected-color mt-3">Selected Color: <span>None</span></p>
+                                    <p class="mt-3 mb-0"><strong>Price: 65 JD</strong></p>
+                                    <button type="button" class="btn btn-dark w-100 mt-3 add-to-cart"
+                                        data-id="furniture1" data-name="Modern Chair" data-price="65"
+                                        data-image="../image/h10.jpg">
+                                        <i class="bi bi-cart-plus"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="card product-card">
+                            <button class="product-toggle" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#furniture2">
+                                <img src="../image/h11.jpg" class="card-img-top product-image" alt="Coffee Table">
+                                <div class="card-body text-start">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="card-title mb-1">Coffee Table</h5>
+                                        <span class="product-price">85 JD</span>
+                                    </div>
+                                    <span class="details-text">View Details <i class="bi bi-chevron-down"></i></span>
+                                </div>
+                            </button>
+                            <div class="collapse" id="furniture2">
+                                <div class="product-details">
+                                    <h6>Product Description</h6>
+                                    <p>Elegant coffee table for your living room.</p>
+                                    <h6>Available Colors</h6>
+                                    <div class="color-options">
+                                        <button type="button" class="color-circle brown" data-color="Brown"></button>
+                                        <button type="button" class="color-circle black" data-color="Black"></button>
+                                    </div>
+                                    <p class="selected-color mt-3">Selected Color: <span>None</span></p>
+                                    <p class="mt-3 mb-0"><strong>Price: 85 JD</strong></p>
+                                    <button type="button" class="btn btn-dark w-100 mt-3 add-to-cart"
+                                        data-id="furniture2" data-name="Coffee Table" data-price="85"
+                                        data-image="../image/h11.jpg">
+                                        <i class="bi bi-cart-plus"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="card product-card">
+                            <button class="product-toggle" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#furniture3">
+                                <img src="../image/h12.jpg" class="card-img-top product-image" alt="Bookshelf">
+                                <div class="card-body text-start">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="card-title mb-1">Bookshelf</h5>
+                                        <span class="product-price">95 JD</span>
+                                    </div>
+                                    <span class="details-text">View Details <i class="bi bi-chevron-down"></i></span>
+                                </div>
+                            </button>
+                            <div class="collapse" id="furniture3">
+                                <div class="product-details">
+                                    <h6>Product Description</h6>
+                                    <p>Practical bookshelf with a simple modern design.</p>
+                                    <h6>Available Colors</h6>
+                                    <div class="color-options">
+                                        <button type="button" class="color-circle brown" data-color="Brown"></button>
+                                        <button type="button" class="color-circle white" data-color="White"></button>
+                                    </div>
+                                    <p class="selected-color mt-3">Selected Color: <span>None</span></p>
+                                    <p class="mt-3 mb-0"><strong>Price: 95 JD</strong></p>
+                                    <button type="button" class="btn btn-dark w-100 mt-3 add-to-cart"
+                                        data-id="furniture3" data-name="Bookshelf" data-price="95"
+                                        data-image="../image/h12.jpg">
+                                        <i class="bi bi-cart-plus"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- Kitchen -->
+            <section class="category-section mb-5">
+                <h2 class="category-title">Kitchen</h2>
+                <div class="products-flex">
+
+                    <div class="product-item">
+                        <div class="card product-card">
+                            <button class="product-toggle" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#kitchen1">
+                                <img src="../image/h13.jpg" class="card-img-top product-image" alt="Dinnerware Set">
+                                <div class="card-body text-start">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="card-title mb-1">Dinnerware Set</h5>
+                                        <span class="product-price">35 JD</span>
+                                    </div>
+                                    <span class="details-text">View Details <i class="bi bi-chevron-down"></i></span>
+                                </div>
+                            </button>
+                            <div class="collapse" id="kitchen1">
+                                <div class="product-details">
+                                    <h6>Product Description</h6>
+                                    <p>Elegant dinnerware set for family meals and special occasions.</p>
+                                    <h6>Available Colors</h6>
+                                    <div class="color-options">
+                                        <button type="button" class="color-circle white" data-color="White"></button>
+                                        <button type="button" class="color-circle beige" data-color="Beige"></button>
+                                    </div>
+                                    <p class="selected-color mt-3">Selected Color: <span>None</span></p>
+                                    <p class="mt-3 mb-0"><strong>Price: 35 JD</strong></p>
+                                    <button type="button" class="btn btn-dark w-100 mt-3 add-to-cart" data-id="kitchen1"
+                                        data-name="Dinnerware Set" data-price="35" data-image="../image/h13.jpg">
+                                        <i class="bi bi-cart-plus"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="card product-card">
+                            <button class="product-toggle" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#kitchen2">
+                                <img src="../image/h14.jpg" class="card-img-top product-image" alt="Cooking Pot Set">
+                                <div class="card-body text-start">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="card-title mb-1">Cooking Pot Set</h5>
+                                        <span class="product-price">50 JD</span>
+                                    </div>
+                                    <span class="details-text">View Details <i class="bi bi-chevron-down"></i></span>
+                                </div>
+                            </button>
+                            <div class="collapse" id="kitchen2">
+                                <div class="product-details">
+                                    <h6>Product Description</h6>
+                                    <p>Practical cooking pot set for everyday kitchen use.</p>
+                                    <h6>Available Colors</h6>
+                                    <div class="color-options">
+                                        <button type="button" class="color-circle black" data-color="Black"></button>
+                                        <button type="button" class="color-circle silver" data-color="Silver"></button>
+                                    </div>
+                                    <p class="selected-color mt-3">Selected Color: <span>None</span></p>
+                                    <p class="mt-3 mb-0"><strong>Price: 50 JD</strong></p>
+                                    <button type="button" class="btn btn-dark w-100 mt-3 add-to-cart" data-id="kitchen2"
+                                        data-name="Cooking Pot Set" data-price="50" data-image="../image/h14.jpg">
+                                        <i class="bi bi-cart-plus"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="card product-card">
+                            <button class="product-toggle" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#kitchen3">
+                                <img src="../image/h15.jpg" class="card-img-top product-image" alt="Kitchen Organizer">
+                                <div class="card-body text-start">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="card-title mb-1">Kitchen Organizer</h5>
+                                        <span class="product-price">15 JD</span>
+                                    </div>
+                                    <span class="details-text">View Details <i class="bi bi-chevron-down"></i></span>
+                                </div>
+                            </button>
+                            <div class="collapse" id="kitchen3">
+                                <div class="product-details">
+                                    <h6>Product Description</h6>
+                                    <p>Useful organizer to keep your kitchen neat and tidy.</p>
+                                    <h6>Available Colors</h6>
+                                    <div class="color-options">
+                                        <button type="button" class="color-circle white" data-color="White"></button>
+                                        <button type="button" class="color-circle gray" data-color="Gray"></button>
+                                        <button type="button" class="color-circle black" data-color="Black"></button>
+                                    </div>
+                                    <p class="selected-color mt-3">Selected Color: <span>None</span></p>
+                                    <p class="mt-3 mb-0"><strong>Price: 15 JD</strong></p>
+                                    <button type="button" class="btn btn-dark w-100 mt-3 add-to-cart" data-id="kitchen3"
+                                        data-name="Kitchen Organizer" data-price="15" data-image="../image/h15.jpg">
+                                        <i class="bi bi-cart-plus"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- Home Accessories -->
+            <section class="category-section mb-5">
+                <h2 class="category-title">Home Accessories</h2>
+                <div class="products-flex">
+
+                    <div class="product-item">
+                        <div class="card product-card">
+                            <button class="product-toggle" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#accessory1">
+                                <img src="../image/h16.jpg" class="card-img-top product-image" alt="Wall Clock">
+                                <div class="card-body text-start">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="card-title mb-1">Wall Clock</h5>
+                                        <span class="product-price">20 JD</span>
+                                    </div>
+                                    <span class="details-text">View Details <i class="bi bi-chevron-down"></i></span>
+                                </div>
+                            </button>
+                            <div class="collapse" id="accessory1">
+                                <div class="product-details">
+                                    <h6>Product Description</h6>
+                                    <p>Modern wall clock for your living room or bedroom.</p>
+                                    <h6>Available Colors</h6>
+                                    <div class="color-options">
+                                        <button type="button" class="color-circle black" data-color="Black"></button>
+                                        <button type="button" class="color-circle gold" data-color="Gold"></button>
+                                        <button type="button" class="color-circle white" data-color="White"></button>
+                                    </div>
+                                    <p class="selected-color mt-3">Selected Color: <span>None</span></p>
+                                    <p class="mt-3 mb-0"><strong>Price: 20 JD</strong></p>
+                                    <button type="button" class="btn btn-dark w-100 mt-3 add-to-cart"
+                                        data-id="accessory1" data-name="Wall Clock" data-price="20"
+                                        data-image="../image/h16.jpg">
+                                        <i class="bi bi-cart-plus"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="card product-card">
+                            <button class="product-toggle" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#accessory2">
+                                <img src="../image/h17.jpg" class="card-img-top product-image" alt="Storage Basket">
+                                <div class="card-body text-start">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="card-title mb-1">Storage Basket</h5>
+                                        <span class="product-price">10 JD</span>
+                                    </div>
+                                    <span class="details-text">View Details <i class="bi bi-chevron-down"></i></span>
+                                </div>
+                            </button>
+                            <div class="collapse" id="accessory2">
+                                <div class="product-details">
+                                    <h6>Product Description</h6>
+                                    <p>Stylish storage basket for organizing home essentials.</p>
+                                    <h6>Available Colors</h6>
+                                    <div class="color-options">
+                                        <button type="button" class="color-circle beige" data-color="Beige"></button>
+                                        <button type="button" class="color-circle brown" data-color="Brown"></button>
+                                    </div>
+                                    <p class="selected-color mt-3">Selected Color: <span>None</span></p>
+                                    <p class="mt-3 mb-0"><strong>Price: 10 JD</strong></p>
+                                    <button type="button" class="btn btn-dark w-100 mt-3 add-to-cart"
+                                        data-id="accessory2" data-name="Storage Basket" data-price="10"
+                                        data-image="../image/h17.jpg">
+                                        <i class="bi bi-cart-plus"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="card product-card">
+                            <button class="product-toggle" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#accessory3">
+                                <img src="../image/h18.jpg" class="card-img-top product-image" alt="Decorative Tray">
+                                <div class="card-body text-start">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="card-title mb-1">Decorative Tray</h5>
+                                        <span class="product-price">14 JD</span>
+                                    </div>
+                                    <span class="details-text">View Details <i class="bi bi-chevron-down"></i></span>
+                                </div>
+                            </button>
+                            <div class="collapse" id="accessory3">
+                                <div class="product-details">
+                                    <h6>Product Description</h6>
+                                    <p>Elegant decorative tray for serving and home decoration.</p>
+                                    <h6>Available Colors</h6>
+                                    <div class="color-options">
+                                        <button type="button" class="color-circle gold" data-color="Gold"></button>
+                                        <button type="button" class="color-circle silver" data-color="Silver"></button>
+                                        <button type="button" class="color-circle black" data-color="Black"></button>
+                                    </div>
+                                    <p class="selected-color mt-3">Selected Color: <span>None</span></p>
+                                    <p class="mt-3 mb-0"><strong>Price: 14 JD</strong></p>
+                                    <button type="button" class="btn btn-dark w-100 mt-3 add-to-cart"
+                                        data-id="accessory3" data-name="Decorative Tray" data-price="14"
+                                        data-image="../image/h18.jpg">
+                                        <i class="bi bi-cart-plus"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <footer class="main-footer text-center p-4">
+        <h5>MN Fashion Store</h5>
+        <div class="footer-links">
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <hr>
+        <p class="mb-0">&copy; 2026 MN Fashion Store. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/lifestyle.js"></script>
+
+</body>
+
+</html>
