@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MN Store</title>
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white border-bottom">
+            <div class="container-fluid px-3 px-lg-4">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="../image/logo.jpeg" width="40" height="40" class="me-2" alt="MN Logo">
+                    <span data-en="Fashion Store" data-ar="متجر الأزياء">Fashion Store</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <form class="d-flex mx-lg-4 my-3 my-lg-0 flex-grow-1">
+                        <input class="form-control" type="search" placeholder="What are you looking for?"
+                            data-placeholder-en="What are you looking for?" data-placeholder-ar="عن ماذا تبحث؟">
+                        <button class="btn btn-secondary" type="submit">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </form>
+                    <div class="d-flex align-items-center flex-wrap gap-2">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Longnan%2C+Gansu%2C+China"
+                            class="nav-link" target="_blank">
+                            <i class="bi bi-geo-alt fs-5"></i>
+                        </a>
+                        <a href="wishlist.html" class="nav-link">
+                            <i class="bi bi-heart fs-5"></i>
+                        </a>
+                        <a href="cart.html" class="nav-link d-flex align-items-center">
+                            <i class="bi bi-bag fs-5 me-2"></i>
+                            <span data-en="Cart" data-ar="السلة">Cart</span>
+                            <span id="cartCount" class="badge bg-dark ms-2">0</span>
+                        </a>
+                        <button class="btn btn-outline-dark" id="langBtn">العربية</button>
+                        <button class="btn btn-outline-dark" id="themeBtn">
+                            <i class="bi bi-moon"></i>
+                        </button>
+                        
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar bg-white border-bottom">
+            <div class="container-fluid justify-content-center">
+                <ul class="navbar-nav flex-row flex-wrap justify-content-center gap-3 gap-md-4">
+                    <li class="nav-item">
+                        <a class="nav-link" href="women.html" data-en="Women" data-ar="نساء">Women</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="men.html" data-en="Men" data-ar="رجال">Men</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kids.html" data-en="Kids" data-ar="أطفال">Kids</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lifestyle.html" data-en="Lifestyle"
+                            data-ar="أسلوب الحياة">Lifestyle</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+<main>
+    <section class="contact-section py-5">
+        <div class="container">
+
+            <div class="text-center mb-5">
+                
+                <p data-en="We would love to hear from you. Send us your message!"
+                    data-ar="يسعدنا التواصل معك! أرسل لنا رسالتك.">
+                    We would love to hear from you. Send us your message!
+                </p>
+            </div>
+
+            <div class="contact-form-container mx-auto">
+                <form id="contactForm">
+
+                    <div class="row g-3">
+
+                        <div class="col-md-6">
+                            <label for="fullName" data-en="Full Name" data-ar="الاسم الكامل">Full Name</label>
+                            <input type="text" id="fullName" class="form-control"
+                                placeholder="Enter your name"
+                                data-placeholder-en="Enter your name"
+                                data-placeholder-ar="أدخل اسمك" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="email" data-en="Email Address" data-ar="البريد الإلكتروني">Email Address</label>
+                            <input type="email" id="email" class="form-control"
+                                placeholder="Enter your email"
+                                data-placeholder-en="Enter your email"
+                                data-placeholder-ar="أدخل بريدك الإلكتروني" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="phone" data-en="Phone Number" data-ar="رقم الهاتف">Phone Number</label>
+                            <input type="tel" id="phone" class="form-control"
+                                placeholder="Enter your phone number"
+                                data-placeholder-en="Enter your phone number"
+                                data-placeholder-ar="أدخل رقم هاتفك">
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="subject" data-en="Subject" data-ar="الموضوع">Subject</label>
+                            <select id="subject" class="form-select" required>
+                                <option value="" data-en="Choose a subject" data-ar="اختر الموضوع">Choose a subject</option>
+                                <option value="Products" data-en="Products Inquiry" data-ar="استفسار عن المنتجات">Products Inquiry</option>
+                                <option value="Orders" data-en="Order Inquiry" data-ar="استفسار عن الطلبات">Order Inquiry</option>
+                                <option value="Returns" data-en="Returns" data-ar="الإرجاع">Returns</option>
+                                <option value="Other" data-en="Other" data-ar="أخرى">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="message" data-en="Your Message" data-ar="رسالتك">Your Message</label>
+                            <textarea id="message" class="form-control" rows="5"
+                                placeholder="Write your message here..."
+                                data-placeholder-en="Write your message here..."
+                                data-placeholder-ar="اكتب رسالتك هنا..." required></textarea>
+                        </div>
+
+                        <div class="col-12">
+                            <button type="submit" class="contact-btn w-100"
+                                data-en="Send Message" data-ar="إرسال الرسالة">
+                                Send Message
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <p id="contactSuccess" class="text-center mt-3" style="display:none;"
+                        data-en="Thank you! Your message has been received."
+                        data-ar="شكراً لك! تم استلام رسالتك.">
+                        Thank you! Your message has been received.
+                    </p>
+
+                </form>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+    <footer class="main-footer text-center p-4">
+        <h5>MN Fashion Store</h5>
+        
+        <hr>
+        <p class="mb-0">
+            &copy; 2026 MN Fashion Store.
+            <span data-en="All Rights Reserved." data-ar="جميع الحقوق محفوظة.">All Rights Reserved.</span>
+        </p>
+    </footer>

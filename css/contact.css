@@ -1,0 +1,111 @@
+
+/* Contact Section */
+
+.contact-section {
+    background-color: #fffdf5;
+}
+
+.contact-section h2 {
+    color: #470000;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.contact-section p {
+    color: #777;
+}
+
+.contact-form-container {
+    max-width: 750px;
+    background-color: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form-container label {
+    display: block;
+    font-weight: bold;
+    color: #470000;
+    margin-bottom: 8px;
+}
+
+.contact-form-container .form-control,
+.contact-form-container .form-select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.contact-form-container .form-control:focus,
+.contact-form-container .form-select:focus {
+    border-color: #8b3a48;
+    box-shadow: 0 0 5px rgba(139, 58, 72, 0.2);
+}
+
+.contact-btn {
+    background-color: #470000;
+    color: white;
+    border: none;
+    padding: 13px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #8b3a48;
+}
+
+#contactSuccess {
+    color: green;
+    font-weight: bold;
+}
+
+/* Dark Mode */
+
+.dark-mode .contact-section {
+    background-color: #222;
+}
+
+.dark-mode .contact-section h2 {
+    color: #f5d99c;
+}
+
+.dark-mode .contact-section p {
+    color: #ccc;
+}
+
+.dark-mode .contact-form-container {
+    background-color: #333;
+}
+
+.dark-mode .contact-form-container label {
+    color: #f5d99c;
+}
+
+.dark-mode .contact-form-container .form-control,
+.dark-mode .contact-form-container .form-select {
+    background-color: #444;
+    color: white;
+    border-color: #666;
+}
+
+.dark-mode .contact-form-container .form-control::placeholder {
+    color: #ccc;
+}
+
+.dark-mode .contact-form-container .form-select option {
+    background-color: #444;
+    color: white;
+}
+
+@media (max-width: 576px) {
+    .contact-form-container {
+        padding: 20px;
+    }
+
+    .contact-section h2 {
+        font-size: 26px;
+    }
+}
