@@ -37,6 +37,202 @@ header {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
+
+
+
+
+
+/* ================= WHY CHOOSE US ================= */
+
+.why-us {
+    background-color: white;
+}
+
+.why-card {
+    height: 100%;
+    padding: 30px 15px;
+    background-color: #fffdf5;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.why-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12);
+}
+
+.why-card i {
+    font-size: 38px;
+    color: #8b3a48;
+    margin-bottom: 18px;
+    display: inline-block;
+}
+
+.why-card h5 {
+    font-weight: bold;
+    color: #470000;
+    margin-bottom: 12px;
+}
+
+.why-card p {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 0;
+    line-height: 1.7;
+}
+
+
+/* ================= DARK MODE ================= */
+
+.dark-mode .new-arrivals,
+.dark-mode .reviews-section {
+    background-color: #292929;
+}
+
+.dark-mode .why-us {
+    background-color: #222;
+}
+
+.dark-mode .section-heading h2 {
+    color: #f5d99c;
+}
+
+.dark-mode .section-heading p {
+    color: #ccc;
+}
+
+.dark-mode .arrival-card {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode .arrival-card h5 {
+    color: white;
+}
+
+.dark-mode .arrival-price {
+    color: #f5c4a0;
+}
+
+.dark-mode .why-card {
+    background-color: #333;
+}
+
+.dark-mode .why-card h5 {
+    color: #f5d99c;
+}
+
+.dark-mode .why-card p {
+    color: #ccc;
+}
+
+.dark-mode .review-card {
+    background-color: #333;
+    border-color: #555;
+}
+
+.dark-mode .review-card p {
+    color: #ddd;
+}
+
+.dark-mode .review-card h6 {
+    color: #f5d99c;
+}
+
+.dark-mode .review-card span {
+    color: #bbb;
+}
+
+/* ================= RTL SUPPORT ================= */
+
+[dir="rtl"] .hero-overlay {
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.15));
+    justify-content: flex-start;
+}
+
+[dir="rtl"] .hero-content {
+    text-align: right;
+}
+
+[dir="rtl"] .hero-content span {
+    letter-spacing: 0;
+}
+
+[dir="rtl"] .section-heading span {
+    letter-spacing: 0;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+    .hero-banner {
+        height: 350px;
+    }
+
+    .hero-overlay {
+        padding: 25px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    .section-heading h2 {
+        font-size: 26px;
+    }
+
+    .arrival-card img {
+        height: 230px;
+    }
+
+    .why-card {
+        padding: 20px 10px;
+    }
+
+    .review-card {
+        padding: 22px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-banner {
+        height: 300px;
+    }
+
+    .hero-overlay {
+        padding: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 27px;
+    }
+
+    .hero-content span {
+        font-size: 11px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .hero-btn {
+        padding: 10px 22px;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .newsletter-form button {
+        width: 100%;
+    }
+}
+
+
 .dark-mode {
     background-color: #222;
     color: white;
